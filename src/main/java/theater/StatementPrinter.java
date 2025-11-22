@@ -3,9 +3,11 @@ package theater;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Map;
+
 /**
  * Class for printing statements.
  */
+
 public final class StatementPrinter {
     private Invoice invoice;
     private Map<String, Play> plays;
