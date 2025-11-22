@@ -3,7 +3,9 @@ package theater;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Map;
-
+/**
+ * Class for printing statements.
+ */
 public final class StatementPrinter {
     private Invoice invoice;
     private Map<String, Play> plays;
@@ -21,6 +23,10 @@ public final class StatementPrinter {
         return plays;
     }
 
+    /**
+     * Prints a statement for the invoice.
+     * @return the statement
+     */
     public String statement() {
         final StringBuilder result = new StringBuilder("Statement for "
                 + invoice.getCustomer() + System.lineSeparator());
