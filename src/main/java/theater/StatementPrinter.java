@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Map;
 
-public class StatementPrinter {
+public final class StatementPrinter {
     private Invoice invoice;
     private Map<String, Play> plays;
 
@@ -22,7 +22,8 @@ public class StatementPrinter {
     }
 
     public String statement() {
-        final StringBuilder result = new StringBuilder("Statement for " + invoice.getCustomer() + System.lineSeparator());
+        final StringBuilder result = new StringBuilder("Statement for "
+                + invoice.getCustomer() + System.lineSeparator());
 
         for (Performance performance : invoice.getPerformances()) {
             final Play play = getPlay(performance);

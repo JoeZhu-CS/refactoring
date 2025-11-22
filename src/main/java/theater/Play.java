@@ -1,6 +1,6 @@
 package theater;
 
-public class Play {
+public final class Play {
 
     private String name;
     private String type;

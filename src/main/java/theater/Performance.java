@@ -1,6 +1,6 @@
 package theater;
 
-public class Performance {
+public final class Performance {
 
     private String playID;
     private int audience;
